@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+let numero1 = parseFloat(prompt("Digite o primeiro valor: "));
+let numero2 = parseFloat(prompt("Digite o segundo valor: "));
+let operacao = parseFloat(prompt("Digite a operação desejada: \n 1= Adição \n 2= Subtração \n 3= Divisão \n 4= Multiplicação"));
+let resultado 
+let invalidez = 0;
+
+switch (operacao){
+    case 1: resultado = numero1 + numero2;
+    break;
+    
+
+    case 2: resultado = numero1 - numero2;
+    break;
+
+    case 3: resultado = numero1 / numero2;
+    break;
+
+    case 4:
+        if (numero2 !== 0) {
+      resultado = numero1 * numero2;
+    } else {
+      invalidez = 1;
+      console.log("Operação inválida: divisão por zero.");
+    }
+
+    break;
+
+    default:
+    console.log("Número inválido!!!");
+    break;
+}
+
+if (operacao >= 1 && operacao <= 4 && invalidez !== 1) {
+    console.log("O Resultado é: " + resultado);
+}
+
+</script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

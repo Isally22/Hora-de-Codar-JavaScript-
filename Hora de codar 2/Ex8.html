@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+ 
+ let nota1 = parseFloat(prompt("Informe a primeira nota(entre 0 e 10): "));
+ let nota2 = parseFloat(prompt("Informe a segunda nota(entre 0 e 10): "));
+ let nota3 = parseFloat(prompt("Informe a terceira nota(entre 0 e 10): "));
+ let nota4 = parseFloat(prompt("Informe a quarta nota(entre 0 e 10): "));
+ var media
+
+    if ( nota1 >= 0 && nota1 <= 10 && nota2 >= 0 && nota2 <= 10 && nota3 >= 0 && nota3 <= 10 && nota4 >= 0 && nota4 <= 10){
+        media = (nota1 + nota2 + nota3 + nota4)/4
+        document.write("Essa é a sua média: ", media);
+    }
+    
+    if (media >= 5){
+      document.write(" <br> Parabens! Você passou no teste 😀");
+    }  
+    
+    else if (media <5) {
+        document.write(" <br> Você não passou no teste 😒. Tente novamente!");
+    }
+      
+    else {
+        document.write(" <br> !Todos os números devem estar entre 0 e 10!");
+
+    }
+   
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
