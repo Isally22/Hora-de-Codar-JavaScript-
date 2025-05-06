@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+ 
+let media;
+let soma = 0;
+let numero;
+let notas = 0;
+
+for (let i = 1; i <= 6; i++) {
+  numero = parseFloat(prompt("Digite a " + i + "ª nota:"));
+
+  // Validação para não permitir notas negativas
+  while (numero < 0 || numero > 10) {
+    numero = parseFloat(prompt("Nota inválida! Informe uma nota entre 0 e 10:"));
+  }
+
+  soma += numero;
+  notas += 1;
+}
+
+media = soma / notas;
+
+alert("A nota média do aluno é: " + media + ".");
+
+
+</script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+let N = parseInt(prompt("Digite um número para mostrar as tabuadas de 1 até N:"));
+let delay = 0;
+
+for (let tabuada = 1; tabuada <= N; tabuada++) {
+  setTimeout(() => {
+    document.write(`\nTabuada do ${tabuada}:`);
+  }, delay);
+  delay += 400;
+
+  for (let proximo = 1; proximo <= 10; proximo++) {
+    setTimeout(() => {
+      document.write(`"<br>"${tabuada} x "<br>" ${proximo} = "<br>"${tabuada *  proximo}`);
+    }, delay);
+    delay += 400;
+  }
+}
+
+
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

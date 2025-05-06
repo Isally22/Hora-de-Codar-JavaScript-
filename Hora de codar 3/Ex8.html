@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+ let N = parseInt(prompt("Digite um valor maior que zero:"));
+
+if (N > 0) {
+  for (let i = 1; i <= N; i++) {
+    setTimeout(() => {
+      alert(i);
+      if (i === N) {
+        alert("Essa foi a sequência 😊");
+      }
+    }, i * 800); // atraso em milissegundos para cada número
+  }
+} else {
+  alert("Valor inválido! Por favor, digite um número maior que zero.");
+}
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

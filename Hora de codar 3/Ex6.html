@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+ while (aluno > 0) {
+ let numero1 = parseFloat(prompt("Digite a primeira nota do aluno (0 a 10):"));
+ 
+  while (numero1 < 0 || numero1 > 10) {
+    numero1 = parseFloat(prompt("Nota inválida! Digite um número entre 0 e 10:"));
+  }
+
+  let numero2 = parseFloat(prompt("Digite a segunda nota do aluno (0 a 10):"));
+  while (numero2 < 0 || numero2 > 10) {
+    numero2 = parseFloat(prompt("Nota inválida! Digite um número entre 0 e 10:"));
+  }
+
+  let media = (numero1 + numero2) / 2;
+
+  if (media > 9.5) {
+    console.log("Aluno aprovado!\n");
+    i++;
+  } else {
+    console.log("Aluno reprovado!\n");
+  }
+
+  atuar = prompt("Calcular a média de outro aluno? (Sim/Não):");
+
+  if (atuar.toLowerCase() === "sim" || atuar.toLowerCase() === "s") {
+    aluno = 1;
+  } else {
+    aluno = 0;
+  }
+}
+
+console.log("Quantidade de alunos aprovados: " + i);
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
